@@ -1,9 +1,8 @@
 import cv2
 import numpy as np
-import imageio
-import matplotlib.pyplot as plt
 
-def CannyLines(frame, lower_bound, upper_bound, dilation=1):
+
+def CannyLines(frame, lower_bound=0, upper_bound=60, dilation=1):
     # canny edge detection on the grayscaled image
     gray=cv2.cvtColor(frame,cv2.COLOR_BGR2GRAY) 
     blur = cv2.GaussianBlur(gray, (3, 3), 0)
