@@ -1,0 +1,7 @@
+tkinter
+customtkinter
+cv2
+PIL
+time
+screeninfo
+numpy
