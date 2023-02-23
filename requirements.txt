@@ -5,3 +5,4 @@ PIL
 time
 screeninfo
 numpy
+imageio

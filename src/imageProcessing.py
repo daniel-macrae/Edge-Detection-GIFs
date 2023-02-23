@@ -5,7 +5,7 @@ import numpy as np
 def CannyLines(frame, lower_bound=0, upper_bound=60, dilation=1):
     # canny edge detection on the grayscaled image
     gray=cv2.cvtColor(frame,cv2.COLOR_BGR2GRAY) 
-    blur = cv2.GaussianBlur(gray, (3, 3), 0)
+    blur = cv2.GaussianBlur(gray, (5, 5), 0)
     canny = cv2.Canny(blur, lower_bound, upper_bound)
     
     if dilation > 1: # if the line thickness we want is > 1 pixel
@@ -18,7 +18,7 @@ def CannyLines(frame, lower_bound=0, upper_bound=60, dilation=1):
 def MixedCannyLines(frame, ranges=[0,100,200,255], dilations = [1,2,4]):
     # grayscale and blur the images
     gray=cv2.cvtColor(frame,cv2.COLOR_BGR2GRAY)  
-    blur = cv2.GaussianBlur(gray, (3, 3), 0)
+    blur = cv2.GaussianBlur(gray, (5, 5), 0)
   
     # template to which we keep adding the line images
     mixed_result = np.zeros_like(gray) 

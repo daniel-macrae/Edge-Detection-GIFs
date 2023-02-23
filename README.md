@@ -7,14 +7,14 @@ Working features:
 - Displays a mp4 file
 - Adjusting the canny edge detection parameters
 - adjusting frame-on-frame blur
+- Options panel (right side) **WIP**
+- Video progress slider (across the bottom of the frame)
+- Video filepath (read)
+- Exporting (+ filepath)
+- Frame skip rate
 
 
 Features to add:
 - Change appearance mode button (light/dark)
-- Video frame slider (across the bottom of the frame)
-- Options panel (right side) **WIP**
-- Video filepath (read)
-- Exporting (+ filepath)
-- Frame skip rate
 - User-adjusted image size
 - Refresh image after the parameters have been adjusted (without skipping to next frame)
